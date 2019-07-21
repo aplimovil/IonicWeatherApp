@@ -1,0 +1,36 @@
+<ion-content padding>
+
+    <!--******************************************** Update this code *********************************************-->
+
+    <form [formGroup]="weatherForm" novalidate>
+        <table width="100%">
+            <tr>
+                <td>
+                    <ion-item>
+                        <!-- Uses a textfield for enter the location, including a validation state -->
+                        <ion-label floating>Location</ion-label>
+                        <ion-input type="text" formControlName="location" name="location"></ion-input>
+                    </ion-item>
+                    <br>
+                    <!-- This message only will be visible if the location is valid -->
+                    <p [hidden]="weatherForm.controls.location.valid" danger padding-left>
+                        Enter a valid location
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <!-- Connects the Get Weather button to getWeather function in the component controller -->
+                    <button ion-button block [disabled]="!weatherForm.controls.location.valid"
+                        (click)="getWeather(weatherForm)">
+                        <ion-icon name="custom-button"></ion-icon>Get Weather
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!--******************************************** Update this code *********************************************-->
+    
+</ion-content>
