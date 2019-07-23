@@ -17,9 +17,9 @@ export class AppConstantsProvider {
 
   constructor(public http: HttpClient) {
     //Setup the geocoding API key
-    this.geocodingAPIKey = "YOUR_API_KEY";
+    this.geocodingAPIKey = "EIjNlGajApebIrRG2oIz50XDUXA39TbH";
     //Setup the Weather API key
-    this.forecastAPIKey = "YOUR_API_KEY";
+    this.forecastAPIKey = "2c038b4d0012c0d4d078c09c5b61213c";
     //Setup the TomTom Geocoding API URL
     this.geocodingAPIURL = "https://api.tomtom.com/search/2/geocode/";
     //Setup the Dark Sky Weather API URL; don't forget to include your KEY

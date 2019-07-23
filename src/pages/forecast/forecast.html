@@ -52,4 +52,9 @@
       </tr>
     </table>
   </form>
+  <!-- Shows the chart graph if connection to Weather service was successful (weatherResult flag set) -->
+  <div *ngIf="weatherResult">
+    <!-- Inserts a Highcharts chart graph using the chart tag according to API -->
+    <chart [options]="chartValue" style="display: block" type="chart"></chart>
+  </div>
 </ion-content>
