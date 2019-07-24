@@ -36,6 +36,15 @@
           </button>
         </td>
       </tr>
+      <tr>
+        <td>
+          <!-- Connects the Get Local Weather button to getLocalWeather function in component controller
+          to get current weather conditions according to the current position from GPS-->
+          <button ion-button block (click)="getLocalWeather(weatherForm)">
+            <ion-icon name="custom-button"></ion-icon>Get Local Weather
+          </button>
+        </td>
+      </tr>
     </table>
   </form>
 

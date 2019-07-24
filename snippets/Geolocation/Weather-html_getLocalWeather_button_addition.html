@@ -1,0 +1,21 @@
+<ion-content padding>
+  <form [formGroup]="weatherForm" novalidate>
+    <table width="100%">
+
+      <!--*************************************** Add this code **************************************-->
+
+      <tr>
+        <td>
+          <!-- Connects the Get Local Weather button to getLocalWeather function in component controller
+      to get current weather conditions according to the current position from GPS-->
+          <button ion-button block (click)="getLocalWeather(weatherForm)">
+            <ion-icon name="custom-button"></ion-icon>Get Local Weather
+          </button>
+        </td>
+      </tr>
+
+      <!--*************************************** Add this code **************************************-->
+      
+    </table>
+  </form>
+</ion-content>
