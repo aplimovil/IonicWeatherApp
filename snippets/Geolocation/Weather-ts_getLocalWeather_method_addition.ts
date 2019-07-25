@@ -10,7 +10,7 @@ export class WeatherPage {
 
   /*********************************************** Add this code ************************************************/
 
-  private geolocation; //Holds a geolocation object for geopositioning purposes
+  private geolocation: Geolocation; //Holds a geolocation object for geopositioning purposes
 
   /*********************************************** Add this code ************************************************/
 
@@ -19,7 +19,7 @@ export class WeatherPage {
   /*********************************************** Update this code ************************************************/
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private fb: FormBuilder, appConstants:
-    AppConstantsProvider, WeatherApi: WeatherApiProvider, private geolocation: Geolocation) {
+    AppConstantsProvider, WeatherApi: WeatherApiProvider, geolocation: Geolocation) {
 
   /*********************************************** Update this code ************************************************/
 

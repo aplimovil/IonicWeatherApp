@@ -26,7 +26,7 @@ export class WeatherPage {
   private currentWeather: any; //Holds the current weather conditions information
   weatherResult: boolean; //Flag to control the weather conditions request to service
   summaryIcon: string; //Holds the icon path for the weather condictions recovered from service
-  private geolocation; //Holds a geolocation object for geopositioning purposes
+  private geolocation: Geolocation; //Holds a geolocation object for geopositioning purposes
   isProgressVisible: boolean; //Flag to control the status of the progress pop-up window
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private fb: FormBuilder, appConstants:
